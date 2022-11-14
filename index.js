@@ -14,7 +14,9 @@ console.log('rgbToHex(0, 60, 200)', rgbToHex(0, 60, 200)) // "#003cc8"
 const daysDiff = (d1, d2) => Math.ceil(Math.abs(d1.getTime() - d2.getTime()) / (3600 * 24 * 1000))
 console.log(daysDiff(new Date("2021-10-10"), new Date("2022-01-01"))) // 83
 
-
+// #5 Сгенерировать случайный цвет в Hex
+const randomColor = () => `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0")}`
+console.log('randomColor', randomColor())
 
 
 
